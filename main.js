@@ -53,7 +53,7 @@
                 var results = httpresults.data; 
                 for(var player in results) 
                 {
-                    $scope.team1[results[player]['name']] = results[player]
+                    $scope.characters[results[player]['name']] = results[player]
                 }
             },function(error){
                 console.log(error)
