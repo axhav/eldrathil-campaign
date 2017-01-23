@@ -1,5 +1,10 @@
 {
-"name":"Varis Okenblood",
-"race":"Woodelf"
-
+    [{
+        "name" : "Varis Okenblood",
+        "race" : "Wood Elf"
+    },[
+        "name" : "Akitess Rass",
+        "race" : "High Elf"
+    ]
+    ]
 }
