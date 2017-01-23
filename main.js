@@ -10,23 +10,23 @@
         //Remove the header used to identify ajax call  that would prevent CORS from working
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(false).hashPrefix('#');
 
         $routeProvider        
-        .when('/',{
+        .when('/eldrathil-campaign',{
             templateUrl:'/home.html',
             controller:'homeController'
         })
 
-        .when('/characters',{
+        .when('/eldrathil-campaign/characters',{
             templateUrl:'/characters/characters.html',
             controller:'characterController'
         })
 
-        .when('/world',{
+        .when('/eldrathil-campaign/world',{
             templateUrl:'/content/world.html',
             controller:'worldController'
-        }).otherwise({ redirectTo: '/' });
+        }).otherwise({ redirectTo: '/eldrathil-campaign' });
 
     });
 
