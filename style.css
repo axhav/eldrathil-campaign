@@ -1,6 +1,6 @@
 @font-face {
     font-family: "OldStyle";
-    src: url(http://ff.static.1001fonts.net/b/l/blackchancery.regular.ttf) format(truetype);
+    src: url(https://ff.static.1001fonts.net/b/l/blackchancery.regular.ttf) format(truetype);
 
 }
 html {
@@ -13,6 +13,8 @@ html {
 
 .header h1 {
     font-family: "OldStyle", Verdana, Tahoma;
+    margin: 0;
+    color:grey; 
 }
 
 ul {
