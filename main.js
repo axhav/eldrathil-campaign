@@ -42,7 +42,7 @@
         }
     ]);
     
-    app.controller('characterController', ['$scope',$http,
+    app.controller('characterController', ['$scope','$http',
         function($scope,$http) {
             $scope.characters = {};
             $http({
