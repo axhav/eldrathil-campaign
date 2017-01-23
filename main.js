@@ -42,8 +42,8 @@
         }
     ]);
     
-    app.controller('characterController', ['$scope',
-        function($scope) {
+    app.controller('characterController', ['$scope',$http,
+        function($scope,$http) {
             $scope.characters = {};
             $http({
               method: 'GET',
