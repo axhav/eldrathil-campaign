@@ -1,12 +1,38 @@
-<html>
-<div class="header">
-The world of Eldrathil
-</div>
-<div class="menu">
-   <a href="#">Characters</a>
-   <a href="#">Towns</a>
-</div>
-<div class="content">
-</div>
+<html ng-app="dndApp">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-messages.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+
+    <script src="main.js" ></script>
+
+    <base href="/">
+
+</head>
+<body  ng-controller="appCtrl">
+    <div class="main">
+        <div class="header">
+        <h1>The world of Eldrathil<h1>
+        </div>
+
+        <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                    <md-nav-item md-nav-href="/" name="Home">Home</md-nav-item>
+                    <md-nav-item md-nav-href="characters" name="Characters">Characters</md-nav-item>
+                    <md-nav-item md-nav-href="world" name="World">World</md-nav-item>
+                <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+                <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+                <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+                -->
+        </md-nav-bar>
+
+        <div ng-view></div>
+    </div>
+</body>
 </html>
 
