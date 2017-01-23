@@ -14,17 +14,17 @@
 
         $routeProvider        
         .when('/eldrathil-campaign',{
-            templateUrl:'home.html',
+            templateUrl:'eldrathil-campaign/home.html',
             controller:'homeController'
         })
 
         .when('/eldrathil-campaign/characters',{
-            templateUrl:'characters/characters.html',
+            templateUrl:'eldrathil-campaign/characters/characters.html',
             controller:'characterController'
         })
 
         .when('/eldrathil-campaign/world',{
-            templateUrl:'content/world.html',
+            templateUrl:'eldrathil-campaign/content/world.html',
             controller:'worldController'
         }).otherwise({ redirectTo: '/eldrathil-campaign' });
 
