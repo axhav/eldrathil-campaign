@@ -1,5 +1,6 @@
 <html ng-app="dndApp">
 <head>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">    
     <link rel="stylesheet" type="text/css" href="style.css">    
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
@@ -12,13 +13,13 @@
 
     <script src="main.js" ></script>
 
-    <base href="/">
+    <base href="/eldrathil-campaign">
 
 </head>
 <body  ng-controller="appCtrl">
     <div class="main">
         <div class="header">
-        <h1>The world of Eldrathil<h1>
+            <h1>The world of Eldrathil</h1>
         </div>
 
         <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
@@ -29,6 +30,7 @@
                 <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
                 <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
                 -->
+                <md-nav-item md-nav-href="#characters" name="Characters">Test2</md-nav-item>
         </md-nav-bar>
 
         <div ng-view></div>
