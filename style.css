@@ -7,16 +7,6 @@ html {
     background-color: black;
 }
 
-.header {
-    background-color: black;
-}
-
-.header h1 {
-    font-family: "OldStyle", Verdana, Tahoma;
-    margin: 0;
-    color:grey; 
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -40,4 +30,26 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+
+.header {
+    background-color: black;
+}
+
+.header h1 {
+    font-family: "OldStyle", Verdana, Tahoma;
+    margin: 0;
+    color:grey; 
+}
+
+
+
+.character-menu {
+    float: left;
+    width: 200px;
+}
+
+.character-pane {
+    float:right;
 }
