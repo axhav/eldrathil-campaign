@@ -42,8 +42,22 @@
         }
     ]);
     
-    app.controller('characterController', [
-        function() {
+    app.controller('characterController', ['$scope',
+        function($scope) {
+            $scope.characters = {};
+            $http({
+              method: 'GET',
+              url: 'https://axhav.github.io/eldrathil-campaign/characters/testchar.json'
+            }).then(function(httpresults)
+            {
+                var results = httpresults.data; 
+                for(var player in results) 
+                {
+                    $scope.team1[results[player]['name']] = results[player]
+                }
+            },function(error){
+                console.log(error)
+            });
 
         }
     ]);
