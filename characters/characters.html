@@ -1,9 +1,19 @@
 <div class="character-menu">
-    <div class="char-select" ng-repeat="player in characters">
-        {{player.name}}
+    <p>Player Characters</p>
+    <div class="character-select" ng-repeat="player in characters">
+        <center ng-click="setSelected(player)">{{player.name}}</center>
+    </div>
+    <p>Non-Player Characters</p>
+    <div class="character-select" ng-repeat="player in npcs">
+        <center ng-click="setSelected(player)">{{player.name}}</center>
     </div>
 </div>
 
 <div class="character-pane">
-    This is a place where the PC and NPC characters will rest
+    <h2>This is a place where the PC and NPC characters will rest </h2>
+    <p>
+    Name: {{selectedCharacter.name}} <br>
+    Age: {{selectedCharacter.age}} <br>
+    Race: {{selectedCharacter.race}} <br>
+    </p>
 </div>

@@ -18,7 +18,7 @@
             controller:'homeController'
         })
 
-        .when('/eldrathil-campaign/characters',{
+        .when('/eldrathil-campaign/chars',{
             templateUrl:'eldrathil-campaign/characters/characters.html',
             controller:'characterController'
         })
@@ -44,7 +44,16 @@
     
     app.controller('characterController', ['$scope','$http',
         function($scope,$http) {
+            $scope.selectedCharacter = {};
+
+            $scope.setSelected = function setSelected(sp) {
+                console.log("test "+ sp)
+                $scope.selectedCharacter = sp;
+            }
+
             $scope.characters = {};
+            
+            
             $http({
               method: 'GET',
               url: 'https://axhav.github.io/eldrathil-campaign/characters/testchar.json'
