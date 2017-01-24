@@ -1,11 +1,27 @@
 [
     {
-        "question":"Are there sourcerers in the world",
-        "answer":"Yes! Every kind of magic is connected to some type of god. The Sourcerers can likely get their talents from the four elemental lords."
+        "question":"Are there Sorcerers in the world?",
+        "answer":"Yes! Every kind of magic is connected to some type of god. The Sorcerers can likely get their talents from the four elemental lords."
     },
     {
-        "question":"More info about the 'The Test of Valor'",
-        "answer":"The King will coucil the gods, if a god is willing to vouch for the magic user then that person does not have to do the test"
+        "question":"Tell me more about the 'The Test of Valor'!",
+        "answer":"The King will coucil the gods, if a god is willing to vouch for the magic user, then that person does not have to do the test. Magic users who does not want to have anything to do with Nertus can use the test as an posibility to reenter society."
+    },
+    {
+        "question":"What if I am a magic and no god will vouch for me",
+        "answer": "Then its assumed that you have gotten the power from Nertus, and will be prosecuted accordingly if caught"
+    },
+    {
+        "question":"Can I as a player carry the mark (recived from The Test of Valor)",
+        "answer":"Ofcourse! With a great power comes a great responsibility!"
+    },
+    {
+        "question":"Can I still level if i recieve the mark?",
+        "answer": "Yes"
+    },
+    {
+        "question":"How many gods are there?", 
+        "answer": "Gods are in the process of being worked out, and will be added to the world page as the are done. Current viewpoint is that the gods will be lawful but the entire way inbetween good and evil, Nertus will act as a chaotic counterpart."
     }
 
 ]
