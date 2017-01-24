@@ -8,9 +8,11 @@
 </div>
 
 <div class="content-pane">
-    <iframe ngif="{{worldcontent.iframe}}" ng-src="{{worldcontent.content}}" style="width:600px; height:500px;" frameborder="0"></iframe>
-    <div ngif="not {{worldcontent.iframe}}" ng-repeat="q in questions"> 
+    <iframe ng-show="worldcontent.iframe" ng-src="{{worldcontent.content}}" style="width:600px; height:500px;" frameborder="0"></iframe>
+    <div class="faq-content" ng-hide="worldcontent.iframe" ng-repeat="q in questions" > 
+        <h3>Question:</h3>
         <p>{{q.question}}</p>
+        <h3>Answer:</h3>
         <p>{{q.answer}}</p>
         
     </div>

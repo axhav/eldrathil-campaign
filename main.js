@@ -71,8 +71,8 @@
         }
     ]);
     
-    app.controller('worldController', ['$scope','$sce',
-        function($scope,$sce) {
+    app.controller('worldController', ['$scope','$sce','$http',
+        function($scope,$sce,$http) {
             $scope.worldcontent = {}
 
             $scope.setSelected = function setSelected(sp) {
@@ -95,7 +95,7 @@
                         $scope.questions = [];
                         for(var player in results) 
                         {
-                            $scope.questions.append(results[player]);
+                            $scope.questions.push(results[player]);
                         }
                     },function(error){
                         console.log(error)
