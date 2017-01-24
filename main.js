@@ -36,9 +36,9 @@
         }
     ]);
     
-    app.controller('homeController', [
-        function() {
-
+    app.controller('homeController', ['$scope',
+        function($scope) {
+            
         }
     ]);
     
@@ -71,9 +71,40 @@
         }
     ]);
     
-    app.controller('worldController', [
-        function() {
+    app.controller('worldController', ['$scope','$sce',
+        function($scope,$sce) {
+            $scope.worldcontent = {}
 
+            $scope.setSelected = function setSelected(sp) {
+                if(sp === "backstory")
+                {
+                    $scope.worldcontent.iframe = true; 
+                    $scope.worldcontent.content = $sce.trustAsResourceUrl('https://docs.google.com/document/d/1uo1q6K0MExP3H33rZKqL2amRbZdVyeaTJsA9sXaFzI8/pub?embedded=true');
+                }
+                else if (sp === "faq")
+                {
+                    $scope.worldcontent.iframe = false; 
+                    $scope.worldcontent.content = "";
+                    
+                    $http({
+                    method: 'GET',
+                    url: 'https://axhav.github.io/eldrathil-campaign/content/faq.json'
+                    }).then(function(httpresults)
+                    {
+                        var results = httpresults.data; 
+                        $scope.questions = [];
+                        for(var player in results) 
+                        {
+                            $scope.questions.append(results[player]);
+                        }
+                    },function(error){
+                        console.log(error)
+                    });
+
+                    
+                }
+
+            }
         }
     ]);
 

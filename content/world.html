@@ -1,3 +1,17 @@
-<div>
-    Its a brand new world we live in~
+<div class="side-menu">
+    <div class="side-menu-selector">
+        <center ng-click="setSelected('backstory')">Backstory</center>
+    </div>
+    <div class="side-menu-selector">
+        <center ng-click="setSelected('faq')">FAQ</center>
+    </div>
+</div>
+
+<div class="content-pane">
+    <iframe ngif="{{worldcontent.iframe}}" ng-src="{{worldcontent.content}}" style="width:600px; height:500px;" frameborder="0"></iframe>
+    <div ngif="not {{worldcontent.iframe}}" ng-repeat="q in questions"> 
+        <p>{{q.question}}</p>
+        <p>{{q.answer}}</p>
+        
+    </div>
 </div>

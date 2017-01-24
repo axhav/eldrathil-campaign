@@ -44,7 +44,23 @@ li a:hover {
     font-size: 60px;
 }
 
-.character-select {
+
+.side-menu {
+    float: left;
+    width: 200px;
+    border-style: solid;
+    border-width: 2px; 
+}
+
+.content-pane {
+    float:left;
+    margin :5px; 
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px; 
+}
+
+.side-menu-selector {
     padding:5px;
     border-style: solid;
     border-width: 2px;
@@ -53,14 +69,8 @@ li a:hover {
 }
 
 .character-menu {
-    float: left;
-    width: 200px;
 }
 
 .character-pane {
-    float:left;
-    margin :5px; 
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px; 
+    
 }
