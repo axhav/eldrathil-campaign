@@ -46,6 +46,7 @@ li a:hover {
 
 .main {
     overflow: auto;   
+    height: 100%;
 }
 .side-menu {
     float: left;
