@@ -44,7 +44,9 @@ li a:hover {
     font-size: 60px;
 }
 
-
+.main {
+    overflow: auto;   
+}
 .side-menu {
     float: left;
     width: 200px;
