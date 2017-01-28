@@ -9,11 +9,13 @@
     </div>
 </div>
 
-<div class="content-pane">
+<div  class="content-pane">
     <h2>This is a place where the PC and NPC characters will rest </h2>
-    <p>
-    Name: {{selectedCharacter.name}} <br>
-    Age: {{selectedCharacter.age}} <br>
-    Race: {{selectedCharacter.race}} <br>
-    </p>
+    <div ng-show="selectedCharacter.name">
+        <p>
+        Name: {{selectedCharacter.name}} <br>
+        Age: {{selectedCharacter.age}} <br>
+        Race: {{selectedCharacter.race}} <br>
+        </p>
+    </div>
 </div>
