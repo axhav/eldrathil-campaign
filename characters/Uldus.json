@@ -1,0 +1,21 @@
+{
+    "name":"Uldus \"the Defender\" Gilhart",
+    "age":null,
+    "class":"Fighter",
+    "race": "Human",
+    "background": null,
+    "alignment":null,
+    "stats": {
+        "str":0,
+        "dex":0,
+        "con":0,
+        "int":0,
+        "wis":0,
+        "char":0,
+        "hp":0
+    },
+    "pt":null,
+    "ideals":null,
+    "bonds":null,
+    "flaws":null
+}
