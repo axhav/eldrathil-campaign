@@ -44,6 +44,7 @@
     
     app.controller('characterController', ['$scope','$http',
         function($scope,$http) {
+            var allChars = ["Uldus"]
             $scope.selectedCharacter = {};
 
             $scope.setSelected = function setSelected(sp) {
@@ -53,20 +54,22 @@
 
             $scope.characters = {};
             
-            
-            $http({
-              method: 'GET',
-              url: 'https://axhav.github.io/eldrathil-campaign/characters/testchar.json'
-            }).then(function(httpresults)
-            {
-                var results = httpresults.data; 
-                for(var player in results) 
+            for (var char in allChars) {
+                $http({
+                    method: 'GET',
+                    url: 'https://axhav.github.io/eldrathil-campaign/characters/'+allChars[char]+'.json'
+                }).then(function(httpresults)
                 {
-                    $scope.characters[results[player]['name']] = results[player]
-                }
-            },function(error){
-                console.log(error)
-            });
+                    var results = httpresults.data; 
+                    //for(var player in results) 
+                    //{
+                        $scope.characters[results['name']] = results
+                    //}
+                },function(error){
+                    console.log(error)
+                });
+            }
+            
 
         }
     ]);

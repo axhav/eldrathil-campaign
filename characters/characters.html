@@ -10,12 +10,37 @@
 </div>
 
 <div  class="content-pane">
-    <h2>This is a place where the PC and NPC characters will rest </h2>
+    <h2>Here you can see the PC and NPC characters in the campaign </h2>
     <div ng-show="selectedCharacter.name">
-        <p>
-        Name: {{selectedCharacter.name}} <br>
-        Age: {{selectedCharacter.age}} <br>
-        Race: {{selectedCharacter.race}} <br>
-        </p>
+        <div class="char-stats">
+            <p>
+            Name: {{selectedCharacter.name}} <br>
+            Age: {{selectedCharacter.age}} <br>
+            Race: {{selectedCharacter.race}} <br>
+            Level: {{selectedCharacter.lvl}} <br>
+            Background: {{selectedCharacter.background}} <br>
+            </p>
+            <div class="char-stats-pane">
+                <p>
+                    Strength: {{selectedCharacter.stats.str}}<br>
+                    Dexterity: {{selectedCharacter.stats.dex}}<br>
+                    Constitution: {{selectedCharacter.stats.con}}<br>
+                    Intelligence: {{selectedCharacter.stats.int}}<br>
+                    Wisdom: {{selectedCharacter.stats.wis}}<br>
+                    Constitution: {{selectedCharacter.stats.char}}<br>
+                </p>
+            </div>
+            <div class="char-stats-background">
+                <p>
+                    Personality Trait: <br> {{selectedCharacter.pt}} <br> <br>
+                    Ideals: <br> {{selectedCharacter.ideals}} <br> <br>
+                    Bonds: <br> {{selectedCharacter.bonds}} <br> <br>
+                    Flaws: <br> {{selectedCharacter.flaws}} <br> <br>
+                </p>
+            </div>
+        </div>
+        <div class="char-portrait">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/a9/2d/85/a92d85728700125672e7b4f4e49765b8.jpg"/>
+        </div>
     </div>
 </div>

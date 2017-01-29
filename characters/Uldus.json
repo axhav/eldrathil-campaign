@@ -3,6 +3,7 @@
     "age":null,
     "class":"Fighter",
     "race": "Human",
+    "lvl":1,
     "background": null,
     "alignment":null,
     "stats": {

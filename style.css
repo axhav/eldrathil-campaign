@@ -58,6 +58,18 @@ nav span {
 .character-pane {
     
 }
+.char-stats {
+    float:left;
+    width: 400px;
+}
+.char-portrait {
+    float:left;
+}
+.char-portrait img {
+    height: auto;
+    width: 300px; 
+}
+
 
 .faq-content {
     border-style: solid;
