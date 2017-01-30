@@ -108,7 +108,7 @@
 
                     
                 }
-                else if (sp === "faq")
+                else if (sp === "gods")
                 {
                     $scope.worldcontent.iframe = false; 
                     $scope.worldcontent.content = "";
@@ -119,6 +119,7 @@
                     }).then(function(httpresults)
                     {
                         var results = httpresults.data.gods; 
+                        $scope.gods = [];
                         for(var g in results) 
                         {
                             $scope.gods.push(results[g]);

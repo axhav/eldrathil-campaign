@@ -19,10 +19,8 @@
         <p>{{q.answer}}</p>
         
     </div> 
-    <div ng-show="selected == 'gods'" ng-repeat="g in gods" > 
-        <h3>Name:</h3>
-        <p>{{g.name}}</p>
-        <h3>Title:</h3>
-        <p>{{g.title}}</p>
+    <div class="faq-content" ng-show="selected == 'gods'" ng-repeat="g in gods" > 
+        <h4>Name:</h4>
+        <p>{{g.name}} - {{g.title}}</p>
     </div>
 </div>
