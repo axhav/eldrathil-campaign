@@ -1,23 +1,23 @@
 {
     "name":"Uldus \"the Defender\" Gilhart",
     "img":"https://s-media-cache-ak0.pinimg.com/736x/a9/2d/85/a92d85728700125672e7b4f4e49765b8.jpg",
-    "age":null,
+    "age":28,
     "class":"Fighter",
     "race": "Human",
     "lvl":1,
-    "background": null,
-    "alignment":null,
+    "background": "Soldier (Officer)",
+    "alignment":"True Neutral",
     "stats": {
-        "str":0,
-        "dex":0,
-        "con":0,
-        "int":0,
-        "wis":0,
-        "char":0,
-        "hp":0
+        "str":19,
+        "dex":12,
+        "con":15,
+        "int":12,
+        "wis":14,
+        "char":14,
+        "hp":12
     },
-    "pt":null,
-    "ideals":null,
-    "bonds":null,
-    "flaws":null
+    "pt":"I face problems head-on. A simple direct solution is the best path to success.",
+    "ideals":"Ideals aren't worth killing for, let alone going to war for.",
+    "bonds":"I would rather die saving my friends than live with the shame of cowardice.",
+    "flaws":"I made a terrible mistake in battle that cost many lives and I would do anything to keep that mistake a secret."
 }
