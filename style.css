@@ -50,6 +50,7 @@ nav span {
     border-width: 2px;
     border-radius: 4px;
     margin:5px;
+    cursor: pointer;
 }
 
 .character-menu {
