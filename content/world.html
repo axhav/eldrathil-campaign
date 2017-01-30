@@ -11,12 +11,18 @@
 </div>
 
 <div class="content-pane">
-    <iframe ng-show="worldcontent.iframe" ng-src="{{worldcontent.content}}" style="width:600px; height:500px;" frameborder="0"></iframe>
-    <div class="faq-content" ng-hide="worldcontent.iframe" ng-repeat="q in questions" > 
+    <iframe ng-show="selected == 'backstory'" ng-src="{{worldcontent.content}}" style="width:600px; height:500px;" frameborder="0"></iframe>
+    <div class="faq-content" ng-show="selected == 'faq'" ng-repeat="q in questions" > 
         <h3>Question:</h3>
         <p>{{q.question}}</p>
         <h3>Answer:</h3>
         <p>{{q.answer}}</p>
         
+    </div> 
+    <div ng-show="selected == 'gods'" ng-repeat="g in gods" > 
+        <h3>Name:</h3>
+        <p>{{g.name}}</p>
+        <h3>Title:</h3>
+        <p>{{g.title}}</p>
     </div>
 </div>

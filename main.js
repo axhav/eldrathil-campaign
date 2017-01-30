@@ -77,8 +77,10 @@
     app.controller('worldController', ['$scope','$sce','$http',
         function($scope,$sce,$http) {
             $scope.worldcontent = {}
+            $scope.selected = null;
 
             $scope.setSelected = function setSelected(sp) {
+                $scope.selected = sp; 
                 if(sp === "backstory")
                 {
                     $scope.worldcontent.iframe = true; 
@@ -96,9 +98,30 @@
                     {
                         var results = httpresults.data; 
                         $scope.questions = [];
-                        for(var player in results) 
+                        for(var q in results) 
                         {
-                            $scope.questions.push(results[player]);
+                            $scope.questions.push(results[q]);
+                        }
+                    },function(error){
+                        console.log(error)
+                    });
+
+                    
+                }
+                else if (sp === "faq")
+                {
+                    $scope.worldcontent.iframe = false; 
+                    $scope.worldcontent.content = "";
+                    
+                    $http({
+                    method: 'GET',
+                    url: 'https://axhav.github.io/eldrathil-campaign/content/world.json'
+                    }).then(function(httpresults)
+                    {
+                        var results = httpresults.data.gods; 
+                        for(var g in results) 
+                        {
+                            $scope.gods.push(results[g]);
                         }
                     },function(error){
                         console.log(error)

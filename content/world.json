@@ -1,0 +1,37 @@
+{
+    "gods":[
+        {
+            "name":"Agatus",
+            "title":"Master of the sea"
+        },
+        {
+            "name":"Eria",
+            "title":"Controller of winds"
+        },
+        {
+            "name":"Askhan",
+            "title":"Shaper of mountains"
+        },
+        {
+            "name":"Ignius",
+            "title":"The Lava Lord"
+        },
+        {
+            "name":"Nertus",
+            "title":"Master of the Tongue"
+        },
+        {
+            "name":"Artio",
+            "title":"Keeper of the forests"
+        },
+        {
+            "name":"Murmir",
+            "title":"Dark master of death"
+        },
+        {
+            "name":"Irva",
+            "title":"Goddess of Light"
+        }
+    ]
+
+}
