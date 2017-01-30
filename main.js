@@ -44,7 +44,7 @@
     
     app.controller('characterController', ['$scope','$http',
         function($scope,$http) {
-            var allChars = ["Uldus","Aoth"]
+            var allChars = ["Uldus","Aoth","Hestia"]
             $scope.selectedCharacter = {};
 
             $scope.setSelected = function setSelected(sp) {
