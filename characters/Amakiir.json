@@ -1,0 +1,28 @@
+{
+    "name":"Roric Amakiir",
+    "img":"https://i.imgur.com/Y9aU84w.jpg",
+    "age":174,
+    "class":"Rogue",
+    "race":"Wood Elf",
+    "lvl":1,
+    "background":"Charlatan",
+    "alignment":"Neutral evil",
+    "height":"163",
+    "weight":"59",
+    "skin":"Copper",
+    "hair":"Short black",
+    "stats": {
+        "str":9,
+        "dex":18,
+        "con":14,
+        "int":11,
+        "wis":14,
+        "char":14,
+        "hp":10
+    },
+    "pt":"I lie about almost everything, even when theres no good reason to. I always have a plan for what to do when things go wrong",
+    "ideals":"I'm loyal to my friends, not any ideals, and everyone else can take a trip down the Styx for all I care.",
+    "bonds":"Ruthless rivals murdered most of my outfit, and left the rest of us to die. Vengence will be ours.",
+    "flaws":"I can't resist swindling people who are more powerful than me",
+    "lore": ""
+}
