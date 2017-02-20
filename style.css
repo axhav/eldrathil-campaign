@@ -78,7 +78,8 @@ nav span {
 }
 #xptext {
     position: absolute;
-    left: 50%;
+    width: 100%;
+    text-align: center;
 }
 #xpbar{
     height: 20px;

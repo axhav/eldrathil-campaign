@@ -21,7 +21,7 @@
             Level: {{selectedCharacter.lvl}}
             <div id="xp">
                 <span id="xptext">Exp:{{selectedCharacter.xp}}</span>
-                <div id="xpbar" style="width: {{selectedCharacter.xp/dndExp[selectedCharacter.level]}}%;"></div>
+                <div id="xpbar" style="width: {{selectedCharacter.xp/dndExp[selectedCharacter.lvl]*100}}%;"></div>
             </div> <br>
             Background: {{selectedCharacter.background}} <br>
             Alignment: {{selectedCharacter.alignment}} <br>
