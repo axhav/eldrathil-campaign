@@ -46,7 +46,7 @@
         function($scope,$http) {
             var allChars = ["Uldus","Aoth","Hestia","Amakiir"]
             $scope.selectedCharacter = {};
-
+            $scope.dndExp = [300,900,2700,6500,14000,23000,34000,48000,64000,85000,100000,120000,140000,165000,195000,225000,265000,305000,355000];
             $scope.setSelected = function setSelected(sp) {
                 console.log("test "+ sp)
                 $scope.selectedCharacter = sp;
