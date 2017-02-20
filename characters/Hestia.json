@@ -5,6 +5,7 @@
     "class":"Fighter",
     "race":"Human",
     "lvl":1,
+    "xp":500,
     "background":"Guild Artisan",
     "alignment":"True Neutral",
     "height":"178",

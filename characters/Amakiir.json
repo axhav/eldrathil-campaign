@@ -5,6 +5,7 @@
     "class":"Rogue",
     "race":"Wood Elf",
     "lvl":1,
+    "xp":500,
     "background":"Charlatan",
     "alignment":"Neutral evil",
     "height":"163",

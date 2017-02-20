@@ -12,12 +12,17 @@
 <div  class="content-pane">
     <h2>Here you can see the PC and NPC characters in the campaign </h2>
     <div ng-show="selectedCharacter.name">
+        
         <div class="char-stats">
             <p>
             Name: {{selectedCharacter.name}} <br>
             Age: {{selectedCharacter.age}} <br>
             Race: {{selectedCharacter.race}} <br>
-            Level: {{selectedCharacter.lvl}} <br>
+            Level: {{selectedCharacter.lvl}}
+            <div id="xp">
+                <span id="xptext">{{selectedCharacter.xp}}</span>
+                <div id="xpbar" style="width: {{selectedCharacter.xp}}%;"></div>
+            </div> <br>
             Background: {{selectedCharacter.background}} <br>
             Alignment: {{selectedCharacter.alignment}} <br>
             Height: {{selectedCharacter.height}}cm<br>

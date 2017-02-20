@@ -5,6 +5,7 @@
     "class":"Fighter",
     "race": "Human",
     "lvl":1,
+    "xp":500,
     "background": "Soldier (Officer)",
     "alignment":"True Neutral",
     "stats": {

@@ -70,7 +70,20 @@ nav span {
     height: auto;
     width: 300px; 
 }
-
+#xp {
+    border:1px solid black;
+    position: relative;
+    padding: 3px;
+    width: 300px;
+}
+#xptext {
+    position: absolute;
+    left: 50%;
+}
+#xpbar{
+    height: 20px;
+    background-color: darkolivegreen;
+}
 
 .faq-content {
     border-style: solid;
