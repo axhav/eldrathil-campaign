@@ -8,6 +8,10 @@
     "xp":500,
     "background": "Soldier (Officer)",
     "alignment":"True Neutral",
+    "height":"198",
+    "weight":"104",
+    "skin":"Fair",
+    "hair":"Brown",
     "stats": {
         "str":19,
         "dex":12,
