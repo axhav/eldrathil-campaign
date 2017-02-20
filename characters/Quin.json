@@ -1,0 +1,29 @@
+{
+    "name":"Quin Sternlight",
+    "img":"",
+    "age":30,
+    "class":"Paladin",
+    "race": "Human",
+    "lvl":2,
+    "xp":500,
+    "background": "Noble",
+    "alignment":"Lawful Good",
+    "height":"182",
+    "weight":"90",
+    "skin":"White",
+    "hair":"Black",
+    "stats": {
+        "str":18,
+        "dex":10,
+        "con":14,
+        "int":9,
+        "wis":10,
+        "char":16,
+        "hp":12
+    },
+    "pt":"The common folk love me for my kindness and generosity",
+    "ideals":"Noble obligation. It is my duty to protect and care for the people beneath me.",
+    "bonds":"The common people must see me as a hero of the people.",
+    "flaws":"In fact, the world does revolve around me.",
+    "lore": null
+}

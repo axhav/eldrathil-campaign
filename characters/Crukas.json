@@ -1,0 +1,29 @@
+{
+    "name":"Crukas the Scribe",
+    "img":"",
+    "age":33,
+    "class":"Cleric (Nature)",
+    "race": "Human",
+    "lvl":2,
+    "xp":500,
+    "background": "Hermit",
+    "alignment":"Lawful Good",
+    "height":"185",
+    "weight":"72",
+    "skin":"Fairy",
+    "hair":"Semi long",
+    "stats": {
+        "str":10,
+        "dex":11,
+        "con":13,
+        "int":10,
+        "wis":16,
+        "char":8,
+        "hp":9
+    },
+    "pt":"The common folk love me for my kindness and generosity",
+    "ideals":"Nobel Obligation, It's my duty to protect and care for the people beneath me",
+    "bonds":"The common people must see me as a hero of th people",
+    "flaws":"In fact, the world does revolve around me",
+    "lore": null
+}

@@ -1,0 +1,25 @@
+{
+    "name":"Baldemar",
+    "img":"",
+    "age":41,
+    "class":"Monk",
+    "race": "Human",
+    "lvl":2,
+    "xp":500,
+    "background": null,
+    "alignment":null,
+    "stats": {
+        "str":12,
+        "dex":16,
+        "con":15,
+        "int":11,
+        "wis":16,
+        "char":7,
+        "hp":12
+    },
+    "pt":"I feel tremendous empathy for all who suffers. I am working on a grand philosophical theory and love sharing my ideas",
+    "ideals":"If you know yourself, there is nothing left to know",
+    "bonds":"I'm Still seeking the enlightenment I pursued in my seclusion, and it still eludes me",
+    "flaws":"I harbour dark, bloodthirsty thoughts that my isolation and meditation failed to quell",
+    "lore": null
+}
